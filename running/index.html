@@ -1,0 +1,694 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="翻译中。
+
+Running your ink
+Quick Start
+Note that although these instructions are written with Unity in mind, it&apos;s possible (and straightforward) to run your ink in a non-Unity C# environment.
+
+Download t">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ink | 中文翻译站">
+<meta property="og:url" content="http://yoursite.com/running/index.html">
+<meta property="og:site_name" content="Ink | 中文翻译站">
+<meta property="og:description" content="翻译中。
+
+Running your ink
+Quick Start
+Note that although these instructions are written with Unity in mind, it&apos;s possible (and straightforward) to run your ink in a non-Unity C# environment.
+
+Download t">
+<meta property="og:updated_time" content="2016-10-06T21:47:07.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ink | 中文翻译站">
+<meta name="twitter:description" content="翻译中。
+
+Running your ink
+Quick Start
+Note that although these instructions are written with Unity in mind, it&apos;s possible (and straightforward) to run your ink in a non-Unity C# environment.
+
+Download t">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/running/"/>
+
+  <title>  | Ink | 中文翻译站 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Ink | 中文翻译站</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Ink 简介
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-writing">
+          <a href="/writing" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-pencil"></i> <br />
+            
+            写作指南
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-running">
+          <a href="/running" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
+            
+            运行 ink
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+        <div class="post-meta">
+        
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>翻译中。</p>
+</blockquote>
+<h1 id="running-your-ink">Running your ink</h1>
+<h2 id="quick-start">Quick Start</h2>
+<p><em>Note that although these instructions are written with Unity in mind, it's possible (and straightforward) to run your ink in a non-Unity C# environment.</em></p>
+<ul>
+<li>Download the <a href="https://github.com/inkle/ink/releases" target="_blank" rel="external">latest version of the ink-unity-integration Unity package</a>, and add to your project.</li>
+<li>Select your <code>.ink</code> file in Unity, and you should see a <em>Play</em> button in the file's inspector.</li>
+<li>Click it, and you should get an Editor window that lets you play (preview) your story.</li>
+<li>To integrate into your game, see <strong>Getting started with the runtime API</strong>, below.</li>
+</ul>
+<h2 id="further-information">Further information</h2>
+<p>Ink uses an intermediate <code>.json</code> format, which is compiled from the original <code>.ink</code> files. ink's Unity integration package automatically compiles ink files for you, but you can also compile them on the command line. See <strong>Using inklecate on the command line</strong> in the <a href="http://www.github.com/inkle/ink" target="_blank" rel="external">README</a> for more information.</p>
+<p>The main runtime code is included in the <code>ink-engine.dll</code>.</p>
+<p>We recommend that you create a wrapper MonoBehaviour component for the <strong>ink</strong> <code>Story</code>. Here, we'll call the component &quot;Script&quot; - in the &quot;film script&quot; sense, rather than the &quot;Unity script&quot; sense!</p>
+<pre><code>using Ink.Runtime;
+
+public class Script : MonoBehaviour {
+
+	// Set this file to your compiled json asset
+	public TextAsset inkAsset;
+
+	// The ink story that we're wrapping
+	Story _inkStory;
+</code></pre>
+<h2 id="getting-started-with-the-runtime-api">Getting started with the runtime API</h2>
+<p>As mentioned above, your <code>.ink</code> file(s) are compiled to a single <code>.json</code> file. This is treated by Unity as a TextAsset, that you can then load up in your game.</p>
+<p>The API for loading and running your story is very straightforward. Construct a new <code>Story</code> object, passing in the JSON string from the TextAsset. For example, in Unity:</p>
+<pre><code>using Ink.Runtime;
+
+...
+
+void Awake()
+{
+    _inkStory = new Story(inkAsset.text);
+}
+</code></pre>
+<p>From there, you make calls to the story in a loop. There are two repeating stages:</p>
+<ol>
+<li>
+<p><strong>Present content:</strong> You repeatedly call <code>Continue()</code> on it, which returns individual lines of string content, until the <code>canContinue</code> property becomes false. For example:</p>
+<pre><code>while (_inkStory.canContinue) {
+    Debug.Log (_inkStory.Continue ());
+}
+</code></pre>
+<p>A simpler way to achieve the above is through one call to <code>_inkStory.ContinueMaximally()</code>. However, in many stories it's useful to pause the story at each line, for example when stepping through dialogue. Also, in such games, there may be state changes that should be reflected in the UI, such as resource counters.</p>
+</li>
+<li>
+<p><strong>Make choice:</strong> When there isn't any more content, you should check to see whether there any choices to present to the player. To do so, use something like:</p>
+<pre><code>if( _inkStory.currentChoices.Count &gt; 0 ) 
+{
+    for (int i = 0; i &lt; _inkStory.currentChoices.Count; ++i) {
+        Choice choice = _inkStory.currentChoices [i];
+        Debug.Log(&quot;Choice &quot; + (i + 1) + &quot;. &quot; + choice.text);
+    }
+}
+</code></pre>
+<p>...and when the player provides input:</p>
+<pre><code>_inkStory.ChooseChoiceIndex (index);
+</code></pre>
+<p>And now you're ready to return to step 1, and present content again.</p>
+</li>
+</ol>
+<h3 id="saving-and-loading">Saving and loading</h3>
+<p>To save the state of your story within your game, call:</p>
+<p><code>string savedJson = _inkStory.state.ToJson();</code></p>
+<p>...and then to load it again:</p>
+<p><code>_inkStory.state.LoadJson(savedJson);</code></p>
+<h3 id="is-that-it">Is that it?</h3>
+<p>That's it! You can achieve a lot with just those simple steps, but for more advanced usage, including deep integration with your game, read on.</p>
+<p>For a sample Unity project in action with minimal UI, see <a href="https://github.com/abroder/blot" target="_blank" rel="external">Aaron Broder's Blot repo</a>.</p>
+<h2 id="engine-usage-and-philosophy">Engine usage and philosophy</h2>
+<p>In Unity, we recommend using your own component class to wrap <code>Ink.Runtime.Story</code>. The runtime <strong>ink</strong> engine has been designed to be reasonably general purpose and have a simple API. We also recommend wrapping rather than inheriting from <code>Story</code>, so that you can expose to your game only the functionality that you need.</p>
+<p>Often when designing the flow for your game, the sequence of interactions between the player and the story may not precisely match the way the <strong>ink</strong> is evaluted. For example, with a classic choose-your-own-adventure type story, you may want to show multiple lines (paragraphs) of text and choices all at once. For a visual novel, you may want to display one line per screen.</p>
+<p>Additionally, since the <strong>ink</strong> engine outputs lines of plain text, it can be effectively used for your own simple sub-formats. For example, for a dialog based game, you could write:</p>
+<pre><code>*   Lisa: Where did he go?
+    Joe:  I think he jumped over the garden fence.
+    * *   Lisa: Let's take a look.
+    * *   Lisa: So he's gone for good?
+</code></pre>
+<p>As far as the <strong>ink</strong> engine is concerned, the <code>:</code> characters are just text. But as the lines of text and choices are produced by the game, you can do some simple text parsing of your own to turn the string <code>Joe: What's up?</code> into a game-specific dialog object that references the speaker and the text (or even audio).</p>
+<p>This approach can be taken even further to text that flexibly indicates non-content directives. Again, these directives come out of the engine as text, but can parsed by your game for a specific purpose:</p>
+<pre><code>PROPLIST table, chair, apple, orange
+</code></pre>
+<p>The above approach is used in our current game for the writer to declare the props that they expect to be in the scene. These might be picked up in the game editor in order to automatically fill a scene with placeholder objects, or just to validate that the level designer has populated the scene correctly.</p>
+<p>Of course, you can also use <em>External Functions</em> - see below, but the above approach is flexible and won't cause the game to crash if everything isn't set up perfectly yet.</p>
+<h2 id="jumping-to-a-particular-scene">Jumping to a particular &quot;scene&quot;</h2>
+<p>Top level named sections in <strong>ink</strong> are called knots (see <a href="https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md" target="_blank" rel="external">the writing tutorial</a>). You can tell the runtime engine to jump to a particular named knot:</p>
+<pre><code>_inkStory.ChoosePathString(&quot;myKnotName&quot;);
+</code></pre>
+<p>And then call <code>Continue()</code> as usual.</p>
+<p>To jump directly to a stitch within a knot, use a <code>.</code> as a separator:</p>
+<pre><code>_inkStory.ChoosePathString(&quot;myKnotName.theStitchWithin&quot;);
+</code></pre>
+<p>(Note that this path string is a <em>runtime</em> path rather than the path as used within the <strong>ink</strong> format. It's just been designed so that for the basics of knots and stitches, the format works out the same. Unfortunately however, you can't reference gather or choice labels this way.)</p>
+<h2 id="setting-getting-ink-variables">Setting/getting ink variables</h2>
+<p>The state of the variables in the <strong>ink</strong> engine is, appropriately enough, stored within the <code>variablesState</code> object within the <code>story</code>. You can both get and set variables directly on this object:</p>
+<pre><code>_inkStory.variablesState[&quot;player_health&quot;] = 100
+
+int health = (int) _inkStory.variablesState[&quot;player_health&quot;]
+</code></pre>
+<h2 id="read-visit-counts">Read/Visit counts</h2>
+<p>To find out the number of times that a knot or stitch has been visited by the ink engine, you can use this API:</p>
+<pre><code>_inkStory.state.VisitCountAtPathString(&quot;...&quot;);
+</code></pre>
+<p>The path string is in the form <code>&quot;yourKnot&quot;</code> for knots, and <code>&quot;yourKnot.yourStitch&quot;</code> for stitches.</p>
+<h2 id="variable-observers">Variable observers</h2>
+<p>You can register a delegate function to be called whenever a particular variable changes. This can be useful to reflect the state of certain <strong>ink</strong> variables directly in the UI. For example:</p>
+<pre><code>_inkStory.ObserveVariable (&quot;health&quot;, (string varName, object newValue) =&gt; {
+    SetHealthInUI((int)newValue);
+});
+</code></pre>
+<p>The reason that the variable name is passed in is so that you can have a single observer function that observes multiple different variables.</p>
+<h2 id="exernal-functions">Exernal functions</h2>
+<p>You can define game-side functions in C# that can be called directly from <strong>ink</strong>. To do so:</p>
+<ol>
+<li>
+<p>Declare an external function using something like this at the top of one of your <strong>ink</strong> files, in global scope:</p>
+<pre><code> EXTERNAL multiply(x,y)
+</code></pre>
+</li>
+<li>
+<p>Bind your C# function. For example:</p>
+<pre><code> _inkStory.BindExternalFunction (&quot;multiply&quot;, (int arg1, float arg2) =&gt; {
+     return arg1 * arg2;
+ });  
+</code></pre>
+<p>There are convenience overloads for BindExternalFunction, for up to three parameters, for both generic <code>System.Func</code> and <code>System.Action</code>. There is also a general purpose <code>BindExternalFunctionGeneral</code> that takes an object array for more than 3 parameters.</p>
+</li>
+<li>
+<p>You can then call that function within the <strong>ink</strong>:</p>
+<pre><code> 3 times 4 is {multiply(3, 4)}.
+</code></pre>
+</li>
+</ol>
+<p>The types you can use as parameters and return values are int, float, bool (automatically converted from <strong>ink</strong>’s internal ints) and string.</p>
+<h3 id="fallbacks-for-external-functions">Fallbacks for external functions</h3>
+<p>When testing your story, either in <a href="https://github.com/inkle/inky" target="_blank" rel="external">Inky</a> or in the <a href="https://github.com/inkle/ink-unity-integration/" target="_blank" rel="external">ink-unity integration</a> player window, you don't get an opportunity to bind a game function before running the story. To get around this, you can define a <em>fallback function</em> within ink, which is run if the <code>EXTERNAL</code> function can't be found. To do so, simply create an ink function with the same name and parameters. For example, for the above <code>multiply</code> example, create the ink function:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">=== function multiply(x,y) ===</div><div class="line">// Usually external functions can only return placeholder</div><div class="line">// results, otherwise they&apos;d be defined in ink!</div><div class="line">~ return 1</div></pre></td></tr></table></figure></p>
+<h2 id="debugging-ink-engine-issues">Debugging ink engine issues</h2>
+<p>The <strong>ink</strong> engine is still in a nascent stage (alpha!), and you may well encounter bugs, or unhelpful error messages and exceptions.</p>
+<p>We recommend we debug the compiler so that you get a breakpoint in its code when compiling and/or playing your ink file. To do so, open <strong>ink.sln</strong> in Xamarin or Visual Studio, and run the compiler code in the Test configuration. You should supply command line parameters in the project settings. (In Xamarin, right-click on <em>inklecate</em>, click <em>Options</em>, and in <em>Run &gt; General</em> and modify the parameters field.) You could use something like:</p>
+<pre><code>-p path/to/yourMainFile.ink
+</code></pre>
+<p>The <code>-p</code> switch puts the compiler in Play mode, so that it will execute your story immediately.</p>
+<p>When your story hits an assertion, you may be able to glean a little more information from the state of the ink engine. See the <a href="https://github.com/inkle/ink/blob/master/Documentation/ArchitectureAndDevOverview.md" target="_blank" rel="external">Architecture and Development</a> document for help understanding and debugging the engine code.</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="" />
+          <p class="site-author-name" itemprop="name"></p>
+          <p class="site-description motion-element" itemprop="description">translated by alpacanist</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/">
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#running-your-ink"><span class="nav-number">1.</span> <span class="nav-text">Running your ink</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#quick-start"><span class="nav-number">1.1.</span> <span class="nav-text">Quick Start</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#further-information"><span class="nav-number">1.2.</span> <span class="nav-text">Further information</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getting-started-with-the-runtime-api"><span class="nav-number">1.3.</span> <span class="nav-text">Getting started with the runtime API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#saving-and-loading"><span class="nav-number">1.3.1.</span> <span class="nav-text">Saving and loading</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#is-that-it"><span class="nav-number">1.3.2.</span> <span class="nav-text">Is that it?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#engine-usage-and-philosophy"><span class="nav-number">1.4.</span> <span class="nav-text">Engine usage and philosophy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jumping-to-a-particular-scene"><span class="nav-number">1.5.</span> <span class="nav-text">Jumping to a particular "scene"</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setting-getting-ink-variables"><span class="nav-number">1.6.</span> <span class="nav-text">Setting/getting ink variables</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#read-visit-counts"><span class="nav-number">1.7.</span> <span class="nav-text">Read/Visit counts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#variable-observers"><span class="nav-number">1.8.</span> <span class="nav-text">Variable observers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#exernal-functions"><span class="nav-number">1.9.</span> <span class="nav-text">Exernal functions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#fallbacks-for-external-functions"><span class="nav-number">1.9.1.</span> <span class="nav-text">Fallbacks for external functions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#debugging-ink-engine-issues"><span class="nav-number">1.10.</span> <span class="nav-text">Debugging ink engine issues</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
